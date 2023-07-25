@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>what temperature is it?</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="shortcut icon" href="../assets/favicon.ico" type="image/x-icon">
+</head>
+<body>
+  <main class="container">
+    <nav class="navbar">
+      <h1 class="title">What Temperature Is It?🔥🔥</h1>
+      <ul class="info">
+        <li class="item"><a href="https://sebastianpuentespulido.github.io" target="_blank">Author</a></li>
+        <li class="item"><a href="">Source Code</a></li>
+      </ul>
+    </nav>
+  <div class="content">
+    <form id="formData"> 
+      <h1>what temperature is it?</h1>
+      <input type="number" id="temperature" placeholder="Number" name="temperature" required>
+      <select id="temperatureType" name="temperatureType" required>
+        <option value="celsius">&deg;C</option>
+        <option value="fahrenheit">&deg;F</option>
+        <option value="kelvin">&deg;K</option>
+      </select>
+      <label for="convertTo">To</label>
+      <select id="convertTo" name="temperatureTo" required>
+        <option value="celsius">&deg;C</option>
+        <option value="fahrenheit">&deg;F</option>
+        <option value="kelvin">&deg;K</option>
+      </select>
+      <button id="submit" type="submit">Become</button>
+    </form>
+    <section class="results">
+      <div>
+        <h2>results:</h2>
+        <p class="result"></p>
+      </div>
+    </section>
+  </div>
+  </main>
+  <script src="./index.js"></script>
+</body>
+</html>

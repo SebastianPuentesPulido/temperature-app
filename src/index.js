@@ -6,10 +6,10 @@ const result = document.querySelector('.result');
 
 function toCelsius(num, fromTemp) {
   if (fromTemp === "kelvin") {
-    let result = Math.floor(num - 273.15);
+    let result = num - 273.15;
     return `${result} &deg;C`;
   } else if (fromTemp === "fahrenheit") {
-    let result = Math.floor((num - 32) * (5 / 9));
+    let result = (num - 32) * (5 / 9);
     return `${result} &deg;C`;
   } else {
     console.log("%cyou shouldn't see this", "color:green; font-size:5rem;");
@@ -18,10 +18,10 @@ function toCelsius(num, fromTemp) {
 
 function toFahrenheit(num, fromTemp) {
   if (fromTemp === "celsius") {
-    let result = Math.floor(num * (9 / 5) + 32);
+    let result = num * (9 / 5) + 32;
     return `${result} &deg;F`;
   } else if (fromTemp === "kelvin") {
-    let result = Math.floor((num - 273.15) * (9 / 5) + 32);
+    let result = (num - 273.15) * (9 / 5) + 32;
     return `${result} &deg;F`;
   } else {
     console.log("%cyou shouldn't see this", "color:green; font-size:5rem;");
@@ -30,10 +30,10 @@ function toFahrenheit(num, fromTemp) {
 
 function toKelvin(num, fromTemp) {
     if (fromTemp === "celsius") {
-      let result = Math.floor(num+273.15);
+      let result =num+273.15;
         return `${result} K`;
     } else if ( fromTemp === "fahrenheit") {
-      let result = Math.floor((num-32)*(5/9)+273.15);
+      let result =(num-32)*(5/9)+273.15;
         return `${result} K`;
     }
 }
